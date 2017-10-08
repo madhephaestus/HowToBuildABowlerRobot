@@ -7,7 +7,7 @@ return new ICadGenerator(){
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
 		CSG legPart  = new Cube(20).toCSG()
-		legPart.setColor(javafx.scene.paint.Color.RED);
+		legPart.setColor(javafx.scene.paint.Color.BLUE);
 		return [legPart].collect{
 			it.setManipulator(manipulator)
 		}
